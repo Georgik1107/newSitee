@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.title {
+color: rgba(255, 255, 255, 0.619);
+text-align: center;
+margin: 0;
+padding: 0;
+background-image: url('/img/back.jpg');
+background-size: cover;
+background-position: center;
+font-size: 150px;
+font-style: italic;
+font-variant: small-caps;
+}
+
+.navbar {
+display: flex;
+justify-content: center;
+background-color: #6e3df6;
+}
+
+.navbar ul {
+margin: 0;
+display: flex;
+list-style-type: none;
+}
+
+.navbar ul li {
+margin: 0;
+padding: 10px;
+}
+
+.navbar ul li a {
+margin: 0;
+text-decoration: none;
+color: white;
+}
+
+.logo {
+height: 55px;
+}
+
+.txt{
+color: white;
+font-size: 35px;
+}
+
+a{
+color: white;
+}
+
+.conteiner{
+  display: flex;
+  justify-content: space-between; /* Распределяет пространство между колонками */
+  padding: 20px; /* Отступы вокруг контейнера */
+}
+
+.column{
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Цвет фона для колонок */
+  padding: 20px; /* Внутренние отступы для колонок */
+  margin: 10px; /* Внешние отступы между колонками */
+  width: 300px; /* Фиксированная ширина колонок */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для колонок */
+}
+
+.left {
+  background-color: #6e3df6a9; /* Цвет фона для левой колонки */
+}
+
+.center {
+  background-color: #6e3df6a9; /* Цвет фона для центральной колонки */
+}
+
+.right {
+  background-color: #6e3df6a9; /* Цвет фона для правой колонки */
+}
+th,td{
+  border-bottom:1px solid white ;
+}
+tr{
+  text-align: center;
+}
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  body{
+    font-size: 80%;
+  }
+  .title {
+    font-size: 60px; /* Уменьшаем размер заголовка */
+  }
+  .txt {
+    font-size: 90%; /* Уменьшаем размер текста в навигации */
+  }
+  .logo {
+    height: 30px;
+  }
+
+  .conteiner {
+    flex-direction: column; /* Изменяем направление на колонны */
+    align-items: center; /* Центрируем колонки */
+  }
+
+  .column {
+    width: 90%; /* Увеличиваем ширину колонок на мобильных устройствах */
+  }
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="title">Mbapplo</h1>
+</header>
+
+<nav class="navbar">
+  <ul>
+    <li class="txt"><a href="index_sou.html">Соцсети</a></li>
+    <li class="txt" ><a href="index_stat.html" >Статистика</a></li>
+    <li class="txt"><a href="">Матчи</a></li>
+    <li ><img class="logo" src="img/MB.png" alt="Логотип клуба"></li>
+    <li class="txt"><a href="">Игроки</a></li>
+    <li class="txt"><a href="">Галерея</a></li>
+    <li class="txt"><a href="">Новости</a></li>
+  </ul>
+  
+</nav>
+<div class="conteiner">
+  <div class="column left">
+    <table>
+      <tr>
+        <th>Имя</th>
+        <th>Кол-во матчей</th>
+        <th>Голы</th>
+        <th>Голевые передачи</th>
+    </tr>
+    <tr>
+      <td>Цирихов Заур</td>
+      <td>16</td>
+      <td>24</td>
+      <td>15</td>
+    </tr>
+    <tr>
+        <td>Руденко Владислав</td>
+        <td>16</td>
+        <td>18</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>Асланиди Георгий</td>
+        <td>11</td>
+        <td>24</td>
+        <td>15</td>
+    </tr>
+    </table>
+  </div>
+  <div class="column center">
+    Ефы фывфы
+    фывфыв
+    фывфыфыв
+    фывфыфывфыв
+    фывфыфывфывв
+    фывфыфыввфы
+    вфы
+    вфыфы
+    фывфыфыввфы
+    фывфыфыввфыф
+    ыв
+  </div>
+  <div class="column right">
+    Ефы фывфы
+    фывфыв
+    фывфыфыв
+    фывфыфывфыв
+    фывфыфывфывв
+    фывфыфыввфы
+    вфы
+    вфыфы
+    фывфыфыввфы
+    фывфыфыввфыф
+    ыв
+  </div>
+</div>
+</body>
+</html>
+
